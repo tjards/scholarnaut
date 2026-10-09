@@ -4,7 +4,6 @@
 - Fetches data from Google Scholar profiles, stores locally, and produces interactive visualizations.
 - Example:
 
-
 ![Screenshot](docs/screenshot.png)
 
 ## Setup
