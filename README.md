@@ -1,10 +1,8 @@
-# ScholarNaut
+# ScholarNaut: Publication Explorer
 
 - Explore an interactive map of research themes and connections over time.
 - Fetches data from Google Scholar profiles, stores locally, and produces interactive visualizations.
-- Example:
-
-![Screenshot](docs/screenshot.png)
+- Demo hosted [here](https://tjards.github.io/scholarnaut/).
 
 ## Setup
 
