@@ -578,11 +578,9 @@
       if(payload.status.refreshing){
         state.polls++;
         if(state.polls<24){clearTimeout(state.pollTimer);state.pollTimer=setTimeout(()=>loadData().catch(showFatal),2000);}
-      }else if(payload.status.cooldown_seconds>0){
-        // Poll while cooldown is active to show countdown
-        clearTimeout(state.pollTimer);
-        state.pollTimer=setTimeout(()=>loadData().catch(showFatal),1000);
       }else{
+        // Refresh complete, stop polling
+        clearTimeout(state.pollTimer);
         state.polls=0;
       }
     }
