@@ -1,0 +1,404 @@
+{
+  "profile_name": "Peter Travis Jardine",
+  "publications": [
+    {
+      "id": "RGlv4ZUAAAAJ:u-x6o8ySG0sC",
+      "title": "Adaptive predictive control of a differential drive robot tuned with reinforcement learning",
+      "year": 2019,
+      "authors": "PT Jardine, M Kogan, SN Givigi, S Yousefi",
+      "venue": "International Journal of Adaptive Control and Signal Processing 33 (2), 410-423 , 2019",
+      "citations": 34,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:u-x6o8ySG0sC",
+      "abstract": "",
+      "areas": [
+        "control",
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:Tyk-4Ss8FVUC",
+      "title": "Experimental results for autonomous model-predictive trajectory planning tuned with machine learning",
+      "year": 2017,
+      "authors": "PT Jardine, SN Givigi, S Yousefi",
+      "venue": "2017 Annual IEEE International Systems Conference (SysCon), 1-7 , 2017",
+      "citations": 22,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Tyk-4Ss8FVUC",
+      "abstract": "",
+      "areas": [
+        "control",
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:Y0pCki6q_DkC",
+      "title": "Adaptive MPC using a dual fast orthogonal Kalman filter: Application to quadcopter altitude control",
+      "year": 2017,
+      "authors": "PT Jardine, SN Givigi, S Yousefi, MJ Korenberg",
+      "venue": "IEEE Systems Journal 13 (1), 973-981 , 2017",
+      "citations": 20,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Y0pCki6q_DkC",
+      "abstract": "",
+      "areas": [
+        "control"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:UeHWp8X0CEIC",
+      "title": "Parameter tuning for prediction-based quadcopter trajectory planning using learning automata",
+      "year": 2017,
+      "authors": "PT Jardine, S Givigi, S Yousefi",
+      "venue": "IFAC-PapersOnLine 50 (1), 2341-2346 , 2017",
+      "citations": 17,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:UeHWp8X0CEIC",
+      "abstract": "",
+      "areas": [
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:IjCSPb-OGe4C",
+      "title": "A robust model-predictive guidance system for autonomous vehicles in cluttered environments",
+      "year": 2018,
+      "authors": "PT Jardine, SN Givigi",
+      "venue": "IEEE Systems Journal 13 (2), 2034-2045 , 2018",
+      "citations": 15,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:IjCSPb-OGe4C",
+      "abstract": "",
+      "areas": [
+        "control"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:u5HHmVD_uO8C",
+      "title": "A predictive motion planner for guidance of autonomous UAV systems",
+      "year": 2016,
+      "authors": "PT Jardine, S Givigi",
+      "venue": "2016 Annual IEEE Systems Conference (SysCon), 1-6 , 2016",
+      "citations": 13,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:u5HHmVD_uO8C",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:ufrVoPGSRksC",
+      "title": "Task Assignment/Trajectory Planning for Unmanned Vehicles Via HFLC and PSO",
+      "year": 2017,
+      "authors": "AT Hafez, MA Kamel, S Givigi, P Jardine",
+      "venue": "2017 International Conference on Unmanned Aircraft Systems (ICUAS), Miami … , 2017",
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:ufrVoPGSRksC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:dhFuZR0502QC",
+      "title": "Incorporating feedback predictions for optimized UAV attack mission planning",
+      "year": 2015,
+      "authors": "PT Jardine, S Givigi, A Noureldin",
+      "venue": "2015 23rd Mediterranean Conference on Control and Automation (MED), 740-746 , 2015",
+      "citations": 11,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:dhFuZR0502QC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:YsMSGLbcyi4C",
+      "title": "Design of a self-assembly system of three-dimensional structures using autonomous construction blocks",
+      "year": 2019,
+      "authors": "KM Cabral, SN Givigi, SRB dos Santos, PT Jardine",
+      "venue": "2019 IEEE International Systems Conference (SysCon), 1-8 , 2019",
+      "citations": 10,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:YsMSGLbcyi4C",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:d1gkVwhDpl0C",
+      "title": "Machine learning for data-driven control of robots",
+      "year": 2018,
+      "authors": "S Givigi, PT Jardine",
+      "venue": "IEEE Potentials 37 (4), 35-39 , 2018",
+      "citations": 10,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:d1gkVwhDpl0C",
+      "abstract": "",
+      "areas": [
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:kNdYIx-mwKoC",
+      "title": "Improving Control Performance of Unmanned Aerial Vehicles through Shared Experience",
+      "year": 2021,
+      "authors": "PT Jardine, S Givigi",
+      "venue": "Journal of Intelligent & Robotic Systems 102 (3), 1-11 , 2021",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:kNdYIx-mwKoC",
+      "abstract": "",
+      "areas": [
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:LkGwnXOMwfcC",
+      "title": "Autonomous assembly of structures using pinning control and formation algorithms",
+      "year": 2020,
+      "authors": "KM Cabral, SN Givigi Jr, PT Jardine",
+      "venue": "2020 IEEE International Systems Conference (SysCon) , 2020",
+      "citations": 8,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:LkGwnXOMwfcC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:ULOm3_A8WrAC",
+      "title": "Flocks, Mobs, and Figure Eights: Swarming as a Lemniscatic Arch",
+      "year": 2023,
+      "authors": "P Jardine, S Givigi",
+      "venue": "IEEE Transactions on Network Science and Engineering 10 (2), 675 - 686 , 2023",
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:ULOm3_A8WrAC",
+      "abstract": "",
+      "areas": [
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:_FxGoFyzp5QC",
+      "title": "Leveraging Data Engineering to Improve Unmanned Aerial Vehicle Control Design",
+      "year": 2020,
+      "authors": "P Jardine, S Givigi, S Yousefi",
+      "venue": "IEEE Systems Journal 15 (2), 2595-2606 , 2020",
+      "citations": 7,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:_FxGoFyzp5QC",
+      "abstract": "",
+      "areas": [
+        "control",
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:roLk4NBRz8UC",
+      "title": "Obstacle avoidance of swarms using pinning control",
+      "year": 2020,
+      "authors": "KM Cabral, SN Givigi, PT Jardine",
+      "venue": "IFAC-PapersOnLine 53 (2), 9628-9635 , 2020",
+      "citations": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:roLk4NBRz8UC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:W7OEmFMy1HYC",
+      "title": "A reinforcement learning approach to predictive control design: autonomous vehicle applications",
+      "year": 2018,
+      "authors": "PT Jardine",
+      "venue": "Queen's University (Canada) , 2018",
+      "citations": 6,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:W7OEmFMy1HYC",
+      "abstract": "",
+      "areas": [
+        "control",
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:9yKSN-GCB0IC",
+      "title": "Architecture for testing learning-based autonomous vehicle control design",
+      "year": 2018,
+      "authors": "M Kogan, PT Jardine, SN Givigi",
+      "venue": "2018 Annual IEEE International Systems Conference (SysCon), 1-7 , 2018",
+      "citations": 5,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:9yKSN-GCB0IC",
+      "abstract": "",
+      "areas": [
+        "control",
+        "learning"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:Se3iqnhoufwC",
+      "title": "Group synchronization in coordination tasks via network control methods",
+      "year": 2020,
+      "authors": "SN Givigi, KM Cabral, PT Jardine",
+      "venue": "IFAC-PapersOnLine 53 (2), 10182-10187 , 2020",
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Se3iqnhoufwC",
+      "abstract": "",
+      "areas": [
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:2osOgNQ5qMEC",
+      "title": "Planar inequality constraints for stable, collision-free model predictive control of a quadcopter",
+      "year": 2017,
+      "authors": "PT Jardine, S Givigi, S Yousefi",
+      "venue": "IFAC-PapersOnLine 50 (1), 9095-9100 , 2017",
+      "citations": 4,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:2osOgNQ5qMEC",
+      "abstract": "",
+      "areas": [
+        "control"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:qxL8FJ1GzNcC",
+      "title": "Emergent Homeomorphic Curves in Swarms",
+      "year": 2025,
+      "authors": "PT Jardine, S Givigi",
+      "venue": "Automatica 176 (112221) , 2025",
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:qxL8FJ1GzNcC",
+      "abstract": "",
+      "areas": [
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:YOwf2qJgpHMC",
+      "title": "Design of a decentralized strategy for layered self-assembly of 3D structures using robotic blocks",
+      "year": 2023,
+      "authors": "K Cabral, T Kaykobad, JA Delamer, P Jardine, S Givigi",
+      "venue": "Journal of Intelligent & Robotic Systems 107 (4), 54 , 2023",
+      "citations": 3,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:YOwf2qJgpHMC",
+      "abstract": "",
+      "areas": [
+        "robotics",
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:_kc_bZDykSQC",
+      "title": "Auction-based solution for the ordering problem in robotic self-assembly",
+      "year": 2023,
+      "authors": "KM Cabral, J Silveira, PT Jardine, SN Givigi",
+      "venue": "2023 IEEE International Systems Conference (SysCon) , 2023",
+      "citations": 2,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:_kc_bZDykSQC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:4DMP91E08xMC",
+      "title": "Decentralized Swarm Control via SO(3) Embeddings for 3D Trajectories",
+      "year": 2025,
+      "authors": "D Silveria, K Cabral, PT Jardine, S Givigi",
+      "venue": "IEEE Robotics and Automation Letters , 2025",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:4DMP91E08xMC",
+      "abstract": "",
+      "areas": [
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:4TOpqqG69KYC",
+      "title": "Emergent Structure in Multi-agent Systems Using Geometric Embeddings",
+      "year": 2024,
+      "authors": "D Silveria, K Cabral, P Jardine, S Givigi",
+      "venue": "2024 IEEE International Symposium on Systems Engineering (ISSE) , 2024",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:4TOpqqG69KYC",
+      "abstract": "",
+      "areas": [
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:Zph67rFs4hoC",
+      "title": "Bimodal Dynamic Swarms",
+      "year": 2022,
+      "authors": "PT Jardine, S Givigi",
+      "venue": "IEEE Access 10 (1), 94487-94495 , 2022",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Zph67rFs4hoC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:qjMakFHDy7sC",
+      "title": "Adaptive state-space model approximation for quadcopter using Fast Orthogonal Search",
+      "year": 2017,
+      "authors": "PT Jardine, SN Givigi, S Yousefi, MJ Korenberg",
+      "venue": "2017 IEEE 30th Canadian Conference on Electrical and Computer Engineering … , 2017",
+      "citations": 1,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:qjMakFHDy7sC",
+      "abstract": "",
+      "areas": [
+        "learning",
+        "control"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:mVmsd5A6BfQC",
+      "title": "Agree to Disagree: Consensus-Free Flocking under Constraints",
+      "year": 2026,
+      "authors": "PT Jardine, S Givigi",
+      "venue": "2026 IEEE International Systems Conference (SysCon), 1-7 , 2026",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:mVmsd5A6BfQC",
+      "abstract": "",
+      "areas": [
+        "swarming"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:Wp0gIr-vW9MC",
+      "title": "Lie Group Control Architectures for UAVs: a Comparison of SE2 (3)-Based Approaches in Simulation and Hardware",
+      "year": 2025,
+      "authors": "D Silveria, K Cabral, P Jardine, S Givigi",
+      "venue": "2025 IEEE International Symposium on Systems Engineering (ISSE) , 2025",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Wp0gIr-vW9MC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:0EnyYjriUFMC",
+      "title": "Breadth, Depth, and Reach of IEEE",
+      "year": 2017,
+      "authors": "PT Jardine",
+      "venue": "IEEE Canadian Review 79, 44 , 2017",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:0EnyYjriUFMC",
+      "abstract": "",
+      "areas": [
+        "robotics"
+      ]
+    },
+    {
+      "id": "RGlv4ZUAAAAJ:zYLM7Y9cAGgC",
+      "title": "Recursive fast orthogonal search for real-time adaptive modelling of a quadcopter",
+      "year": 2017,
+      "authors": "PT Jardine, SN Givigi, S Yousefi, MJ Korenberg",
+      "venue": "2017 International Conference on Unmanned Aircraft Systems (ICUAS), 791-796 , 2017",
+      "citations": 0,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:zYLM7Y9cAGgC",
+      "abstract": "",
+      "areas": [
+        "learning"
+      ]
+    }
+  ],
+  "fetched_at": "2026-10-09T19:19:54+00:00",
+  "profile_url": "https://scholar.google.com/citations?user=RGlv4ZUAAAAJ&hl=en"
+}
