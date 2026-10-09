@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#091425">
+  <meta name="description" content="Explore an interactive map of research themes, and connections over time.">
+  <title>ScholarNaut: Publication Explorer</title>
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./config.js"></script>
+  <script defer src="./assets/app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+
+  <main id="top" class="shell main-content">
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="live-dot"></span> INTERACTIVE</div>
+        <a href="/" class="logo-link"><h1>publication <span class="text-gradient">explorer</span></h1></a>
+        <p>Explore an interactive map of research themes and connections over time.</p>
+        <div class="byline">For author: <strong id="profile-name">author</strong></div>
+      </div>
+      <div class="metric-strip" aria-label="Publication statistics">
+        <div class="metric"><strong id="count-papers">—</strong><span>PUBLICATIONS</span></div>
+        <div class="metric-divider"></div>
+        <div class="metric"><strong id="count-citations">—</strong><span>CITATIONS</span></div>
+        <div class="metric-divider"></div>
+        <div class="metric"><strong id="count-h-index">—</strong><span>H-INDEX</span></div>
+      </div>
+    </section>
+
+    <section id="sync-status" class="sync-strip" aria-live="polite">
+      <div class="sync-leading"><span class="status-light"></span><div><strong id="sync-title">Connecting…</strong><span id="sync-description">Checking cached profile.</span></div></div>
+      <div class="sync-actions">
+        <span id="last-fetched" class="timestamp"></span>
+        <div class="scholar-id-wrap">
+          <label for="scholar-id-input" class="sr-only">Google Scholar ID</label>
+          <input id="scholar-id-input" type="text" placeholder="Scholar ID" maxlength="20" aria-label="Google Scholar profile ID">
+          <button type="button" id="scholar-id-btn" class="btn btn-outline" title="Load a different Scholar profile">Load</button>
+        </div>
+        <button type="button" id="refresh-btn" class="btn btn-outline" disabled><span aria-hidden="true">↻</span> Refresh</button>
+      </div>
+    </section>
+
+    <section id="atlas" class="workspace">
+      <div class="toolbar">
+        <label class="search-wrap"><span aria-hidden="true" class="search-icon">⌕</span><span class="sr-only">Search publications</span><input id="search" type="search" placeholder="Search titles, authors, or venues…" autocomplete="off"><div id="search-suggestions" class="search-suggestions" role="listbox" hidden></div></label>
+        <div class="year-wrap"><label for="year-from">From</label><select id="year-from" aria-label="From year"></select><span class="range-separator">→</span><label for="year-to">To</label><select id="year-to" aria-label="To year"></select></div>
+        <button id="clear-filters" class="clear-btn" type="button">Clear filters</button>
+      </div>
+      <div class="section-head">
+        <div><div class="overline">DISCOVER</div><h2>research <span class="dim-heading"> areas</span></h2><p>Research evolution by topic area. Each dot is a publication. Filter by area using the buttons below.</p></div>
+        <div class="view-toggle" role="group" aria-label="View mode"><button type="button" id="timeline-view" class="toggle active" aria-pressed="true">◫ Timeline</button><button type="button" id="catalog-view" class="toggle" aria-pressed="false">☷ List view</button></div>
+      </div>
+      <div id="area-filters" class="area-filters" role="group" aria-label="Filter by research area"></div>
+      <div class="visual-grid">
+        <div class="panel timeline-panel" id="timeline-panel">
+          <div class="panel-head"><span><span class="panel-icon"></span> Sankey diagram</span><span class="minor-label">HOVER TO PREVIEW· CLICK TO PIN</span></div>
+          <div class="svg-viewport" id="graph-container"><svg id="atlas-svg" viewBox="0 0 1050 505" role="img" aria-label="Publications grouped by research area and year"></svg><div id="chart-tooltip" class="chart-tooltip" role="tooltip" hidden></div></div>
+          <div class="chart-footnote"><span><i class="connection-swatch"></i> When selected, dots are sized relative to citation count.</span><span id="visible-count">—</span></div>
+        </div>
+        <aside class="panel inspector" id="inspector" aria-label="Selected publication details"><div class="panel-head"><span><span class="panel-icon"></span> Paper details</span><span id="pin-indicator" class="minor-label">SELECT A DOT</span></div><div class="inspector-inner" id="paper-details"></div></aside>
+      </div>
+    </section>
+
+    <section id="publications" class="publication-section">
+      <div class="section-head publication-head"><div><div class="overline">DIVE</div><h2>publication <span class="dim-heading">list</span></h2><p>A full list of publications used to feed the visual above. Responds to search bar and filters above.</p></div><div class="sort-control"><label for="sort-by">Sort by</label><select id="sort-by"><option value="newest">Newest first</option><option value="oldest">Oldest first</option><option value="citations">Most cited</option><option value="title">Title A–Z</option></select></div></div>
+      <div id="paper-list" class="paper-list"></div>
+      <div class="list-footer"><button type="button" id="show-more" class="btn btn-outline">Show more publications ↓</button><span id="list-summary"></span></div>
+    </section>
+    <footer><span>©tjards(2026) <span class="muted">· Developed with the support of Claude Haiku 4.5.</span></span><div><a id="footer-scholar" href="https://scholar.google.com/citations?user=RGlv4ZUAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Scholar ↗</a><a id="export-link" href="/api/export">Export data ↗</a></div></footer>
+  </main>
+</body>
+</html>
