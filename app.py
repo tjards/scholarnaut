@@ -100,9 +100,27 @@ def start_refresh() -> bool:
 
 
 # Build complete API response
-def build_payload(*, auto_refresh: bool = True) -> dict:
+def build_payload(*, auto_refresh: bool = True, auto_fetch_on_empty: bool = False) -> dict:
     cache = read_cache()
     if not cache:
+        if auto_fetch_on_empty:
+            start_refresh()
+            with _lock:
+                scholar_user = _scholar_user
+            profile_url = f"https://scholar.google.com/citations?user={scholar_user}&hl=en"
+            return {
+                "profile_name": "ScholarNaut",
+                "profile_url": profile_url,
+                "publications": [],
+                "areas": read_areas(),
+                "fetched_at": None,
+                "editable": True,
+                "status": {
+                    "refreshing": True,
+                    "error": "Fetching Scholar profile...",
+                    "cooldown_seconds": 0,
+                },
+            }
         raise RuntimeError("No Scholar data cached. Run the app and wait for Scholar to fetch, or manually sync.")
     stale = time.time() - PUBLICATIONS_CACHE.stat().st_mtime > CACHE_TTL_SECONDS
     if auto_refresh and stale:
@@ -148,7 +166,7 @@ def config_js():
 # Publications API
 @app.get("/api/publications")
 def publications():
-    return build_payload()
+    return build_payload(auto_fetch_on_empty=True)
 
 
 @app.post("/api/refresh")

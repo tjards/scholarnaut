@@ -13,6 +13,7 @@
       "abstract": "",
       "areas": [
         "control",
+        "robotics",
         "learning"
       ]
     },
@@ -131,7 +132,8 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:d1gkVwhDpl0C",
       "abstract": "",
       "areas": [
-        "learning"
+        "learning",
+        "control"
       ]
     },
     {
@@ -144,6 +146,7 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:kNdYIx-mwKoC",
       "abstract": "",
       "areas": [
+        "control",
         "learning"
       ]
     },
@@ -157,7 +160,8 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:LkGwnXOMwfcC",
       "abstract": "",
       "areas": [
-        "robotics"
+        "robotics",
+        "control"
       ]
     },
     {
@@ -197,7 +201,8 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:roLk4NBRz8UC",
       "abstract": "",
       "areas": [
-        "robotics"
+        "robotics",
+        "control"
       ]
     },
     {
@@ -238,7 +243,8 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Se3iqnhoufwC",
       "abstract": "",
       "areas": [
-        "swarming"
+        "swarming",
+        "control"
       ]
     },
     {
@@ -304,7 +310,8 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:4DMP91E08xMC",
       "abstract": "",
       "areas": [
-        "swarming"
+        "swarming",
+        "control"
       ]
     },
     {
@@ -370,7 +377,7 @@
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=RGlv4ZUAAAAJ&pagesize=100&citation_for_view=RGlv4ZUAAAAJ:Wp0gIr-vW9MC",
       "abstract": "",
       "areas": [
-        "robotics"
+        "control"
       ]
     },
     {
@@ -419,7 +426,8 @@
         "formation algorithm",
         "auction-based",
         "ordering problem",
-        "layered structure"
+        "layered structure",
+        "robot"
       ]
     },
     {
@@ -453,7 +461,8 @@
         "cohesion",
         "neighbor",
         "neighbour",
-        "neighbours"
+        "neighbours",
+        "multi"
       ]
     },
     {
@@ -480,7 +489,8 @@
         "observer",
         "state-space",
         "dynamic model",
-        "control design"
+        "control design",
+        "control"
       ]
     },
     {
@@ -507,11 +517,12 @@
         "system identification",
         "online learning",
         "adaptive learning",
-        "neural network"
+        "neural network",
+        "learn"
       ]
     }
   ],
-  "fetched_at": "2026-10-09T19:19:54+00:00",
+  "fetched_at": "2026-10-09T22:16:19+00:00",
   "editable": false,
   "status": {
     "refreshing": false,
