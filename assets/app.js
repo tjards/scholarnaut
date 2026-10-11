@@ -187,7 +187,14 @@
   }
   // Area filter management
   function renderAreaFilters() {
-    $('area-filters').innerHTML = '';
+    const container = $('area-filters');
+    const areas = state.payload?.areas || [];
+    const hasAnyFilter = state.activeAreas.size > 0;
+    
+    container.innerHTML = areas.map((a) => {
+      const isActive = state.activeAreas.has(a.id);
+      return `<button class="filter-chip ${isActive ? 'active' : ''} ${hasAnyFilter && !isActive ? 'faded' : ''}" type="button" data-filter="${escapeHtml(a.id)}" aria-pressed="${isActive}"><span class="chip-dot" style="--chip-color:${a.color}"></span>${escapeHtml(a.name)}</button>`;
+    }).join('');
   }
   // Toggle area filter on/off
   function activateFilter(id) {
@@ -198,7 +205,7 @@
     renderAll();
   }
 
-  // Render main Sankey diagram with papers, flows, and area filters
+  // Render main diagram with papers, flows, and area filters
   function renderTimeline() {
     const svg = $('atlas-svg');
     svg.replaceChildren();
@@ -206,8 +213,8 @@
     const papers = filteredPapers().filter((p) => Number.isInteger(p.year));
     const vals = years();
     $('visible-count').textContent = `${papers.length} of ${allPapers().length} publications`;
-    const W = 1050, L = 276, R = 1015, Y0 = 62, rowGap = 55;
-    const height = Math.max(350, 90 + rowGap * areas.length);
+    const W = 1050, L = 100, R = 1015, Y0 = 40, rowGap = 55;
+    const height = Math.max(350, 50 + rowGap * areas.length);
     svg.setAttribute('viewBox', `0 0 ${W} ${height}`);
     svg.setAttribute('aria-label', `${papers.length} publications between ${vals[0] || 'unknown'} and ${vals.at(-1) || 'unknown'}, grouped into ${areas.length} research areas`);
     if (!vals.length) {
@@ -223,116 +230,10 @@
     for (let year = vals[0]; year <= vals.at(-1); year++) {
       if ((year - vals[0]) % tickStep !== 0 && year !== vals.at(-1)) continue;
       const x = xScale(year);
-      append(svg, 'line', {x1:x, x2:x, y1:26, y2:yScale(areas.length-1)+36, class:'grid-line'});
+      append(svg, 'line', {x1:x, x2:x, y1:Y0-18, y2:yScale(areas.length-1)+36, class:'grid-line'});
       append(svg, 'text', {x, y:yScale(areas.length-1)+53, class:'year-label','text-anchor':'middle'}, year);
     }
     append(svg, 'line', {x1:18,x2:R,y1:height-18,y2:height-18,stroke:'#34516d','stroke-opacity':'.28'});
-    
-    areas.forEach((a,i) => {
-      const y = yScale(i);
-      const lanePapers = papers.filter((p) => p.areas.includes(a.id));
-      const isActive = state.activeAreas.has(a.id);
-      const hasAnyFilter = state.activeAreas.size > 0;
-      
-      const buttonGroup = append(svg, 'g', {class: 'area-filter-button', 'data-area': a.id, role: 'button', tabindex: 0, 'aria-label': `Filter ${a.name}`, 'aria-pressed': String(isActive), style: 'cursor:pointer'});
-      
-      // Button background 
-      const bgRect = append(buttonGroup, 'rect', {
-        x: 100,
-        y: y - 9,
-        width: 170,
-        height: 18,
-        rx: 5,
-        class: isActive ? 'filter-bg active' : (hasAnyFilter ? 'filter-bg faded' : 'filter-bg'),
-        fill: isActive ? '#dbeafe' : '#f3f4f6'
-      });
-      
-      // Colored dot indicator
-      append(buttonGroup, 'circle', {
-        cx: 108,
-        cy: y,
-        r: 3,
-        fill: a.color
-      });
-      
-      // Text label with truncation
-      const labelText = append(buttonGroup, 'text', {
-        x: 118,
-        y: y + 3.5,
-        class: 'area-label-text',
-        fill: isActive ? '#1e40af' : '#6b7280',
-        'font-size': '13px',
-        'font-weight': isActive ? '650' : '500'
-      }, a.name);
-      
-      // Truncate text if too long
-      if (a.name.length > 20) {
-        labelText.textContent = a.name.substring(0, 17) + '…';
-      }
-      
-      // Event handlers
-      buttonGroup.addEventListener('click', () => activateFilter(a.id));
-      buttonGroup.addEventListener('keydown', (event) => { 
-        if(event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          activateFilter(a.id);
-        } 
-      });
-    });
-
-    // Add instruction text at top left
-    append(svg, 'text', {
-      x: 100,
-      y: Y0 - 52,
-      class: 'filter-instruction-text',
-      fill: '#6b7280',
-      'font-size': '10px',
-      'font-weight': '600',
-      'letter-spacing': '0.4px',
-      'text-transform': 'uppercase'
-    }, 'SELECT TO FILTER BY AREA');
-
-    // Add reset button below instruction text
-    const resetButtonGroup = append(svg, 'g', {class: 'area-filter-button reset-button', role: 'button', tabindex: 0, 'aria-label': 'Reset to default view', style: 'cursor:pointer'});
-    
-    append(resetButtonGroup, 'rect', {
-      x: 90 + 200,
-      y: Y0 - 40,
-      width: 80,
-      height: 18,
-      rx: 5,
-      fill: '#f3f4f6'
-    });
-    
-    append(resetButtonGroup, 'text', {
-      x: 100 + 200,
-      y: Y0 - 40 + 13,
-      class: 'area-label-text',
-      fill: '#6b7280',
-      'font-size': '11px',
-      'font-weight': '500'
-    }, '↻ Reset');
-    
-    resetButtonGroup.addEventListener('click', () => {
-      state.search = '';
-      state.minYear = null;
-      state.maxYear = null;
-      state.activeAreas.clear();
-      state.expanded = false;
-      state.selectedId = null;
-      state.hoverId = null;
-      $('search').value = '';
-      $('year-from').value = '';
-      $('year-to').value = '';
-      renderAll();
-    });
-    
-    resetButtonGroup.addEventListener('keydown', (event) => {
-      if (event.key === 'Enter' || event.key === ' ') {
-        event.preventDefault();
-        resetButtonGroup.dispatchEvent(new MouseEvent('click'));
-      }
-    });
 
     // Position papers centrally in a timeline, with connections flowing to research areas
     const centerY = yScale(areas.length / 2 - 0.5);
